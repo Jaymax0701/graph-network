@@ -48,7 +48,7 @@ const GraphView: React.FC = () => {
     useEffect(() => {
         if (!svgRef.current) return;
 
-        // Clear previous SVG content before rendering new elements
+        // To prevent redundant output by clearing previous Svg
         const svgElement = d3.select(svgRef.current);
         svgElement.selectAll("*").remove();
 
@@ -80,7 +80,7 @@ const GraphView: React.FC = () => {
             .force('center', d3.forceCenter(svgWidth / 2, svgHeight / 2))
             .force('collision', d3.forceCollide().radius(50));
 
-        // Draw edges with visual confirmation for selected edge
+        // Draw edges
         const link = svgGroup.selectAll<SVGLineElement, Edge>('line')
             .data(graphData.edges, (d: Edge) => d.id)
             .join('line')
@@ -379,6 +379,7 @@ const GraphView: React.FC = () => {
     );
 };
 
+//start here the styling proceedd
 // Inline styles for consistency and better readability
 const buttonStyle: React.CSSProperties = {
     marginTop: '10px',
