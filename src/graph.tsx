@@ -22,9 +22,9 @@ const GraphView: React.FC = () => {
 
     const [graphData, setGraphData] = useState<{ nodes: Node[]; edges: Edge[] }>({
         nodes: [
-            { id: 1, label: "Node 1", color: "#ff0000" },
-            { id: 2, label: "Node 2", color: "#00ff00" },
-            { id: 3, label: "Node 3", color: "#0000ff" }
+            { id: 1, label: "Airport 1", color: "#ff0000" }, //this is just example on using it for airport
+            { id: 2, label: "Airport 2", color: "#00ff00" },
+            { id: 3, label: "Airport 3", color: "#0000ff" }
         ],
         edges: [
             { id: 1, source: 1, target: 2 },
