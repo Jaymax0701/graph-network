@@ -57,7 +57,7 @@ Open your browser and navigate to `http://localhost:3000` to see the application
 - Use the provided buttons to add new nodes and edges or to delete existing ones.
 - You can also change the node name by selecting it and change it.
 
-##Faulty
+## Faulty
 - After changes in name the after deleting the node, the edge attached to it in previous name wont deleted automatically 
 
 
