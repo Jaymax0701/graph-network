@@ -2,7 +2,10 @@
 
 ## Overview
 This project is a React application that visualizes a graph network using D3.js. Users can interact with nodes and edges, allowing for dynamic modifications of the graph, including adding or deleting nodes and edges, and updating node properties.
--This is also my first project using React and D3 in development, any faulty is deeply regret
+- This is also my first project using React and D3 in development, any faulty is deeply regret
+
+## Design choice
+The colour option is being used to fit in the modern days demand and habits of using the dark mode hence why the colour choices are based on darkmode.
 
 ## Features
 - **Interactive Graph Visualization:** Nodes and edges can be dragged, clicked, and interacted with.
@@ -51,6 +54,7 @@ Open your browser and navigate to `http://localhost:3000` to see the application
 - Click on a node to select it, where you can edit its label and color.
 - Right-click on an edge to select it for deletion.
 - Use the provided buttons to add new nodes and edges or to delete existing ones.
+- You can also change the node name by selecting it and change it.
 
 
 ## License
